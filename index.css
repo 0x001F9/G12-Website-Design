@@ -1,0 +1,126 @@
+body {
+  margin: 0px;
+  background-color: #a3b18a;
+  overflow-x: hidden;
+  color: #0e0e0e;
+  font-family: 'Montserrat';
+}
+
+header {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("Resources/Hinulugang-taktakSpider-web.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: image-anim 100s infinite;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+@keyframes image-anim {
+  0% {
+    background-position-y: 0%;
+  }
+  50% {
+    background-position-y: 100%;
+  }
+  100% {
+    background-position-y: 0%;
+  }
+}
+
+/* for nav*/
+#design-nav {
+  width: 100vw;
+  display: inline-flex;
+  align-items: end;
+}
+#logo-header {
+  width: 460px;
+  height: 210px;
+  background-color: #a3b18a;
+  border-radius: 58% 42% 100% 0% / 0% 100% 0% 100% ;
+  display: flex;
+  align-items: end;
+  z-index: 1;
+}
+#img-for-header {
+  width: 400px;
+  height: 210px;
+  object-fit: cover;
+  /* filter: drop-shadow(0px 1px 10px #0e0e0e); */
+}
+#nav {
+  width: 100vw;
+  height: 100px;
+  background-color: #a3b18a;
+  position: absolute;
+  z-index: 0;
+  padding: 10px; padding-left: 460px;
+  box-sizing: border-box;
+  display: inline-flex;
+  justify-content: end;
+  align-items: center;
+  gap: 20px;
+}
+.nav-li {
+  font-size: 1.2em;
+  color: #222121;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 1s;
+  padding: 10px 15px;
+  border-radius: 10px;
+  transition: 1s, color 0.2s;
+}
+.nav-li:hover {
+  background-color: #588157;
+  color: white;
+}
+#reviews-nav {
+  font-size: 1.3em;
+  font-weight: 600;
+  cursor: pointer;
+}
+#reviews-nav img {
+  width: 35px;
+  margin-right: 5px;
+  transition: 2s;
+}
+#reviews-nav:hover img {
+  transform: rotate(360deg);
+}
+
+/*content in header*/
+#header-content {
+  width: 100vw;
+  height: 100%;
+  padding: 20px;
+}
+#img-header {
+  width: 15vw;
+  height: 15vw;
+  margin-left: 30px;
+  background-size: cover;
+  filter: drop-shadow(1px 1px 45px #80ed99);
+  background-image: url(Resources/web-svgrepo-com.svg);
+}
+
+/* Explore page */
+#explore-page {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+
+  padding: 20px;
+}
+#explore-page h1 {
+  font-size: 3em;
+}
+#carousel-explore {
+  width: 100vw;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}

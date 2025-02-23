@@ -1,0 +1,31 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.anim-anchor {
+  padding: 10px  50px;
+  border-radius: 50px;
+  transition: 0.5s;
+
+  margin-right: 60px;
+  background-color: #808000;
+}
+.anim-anchor img {
+  width: 30px;
+}
+
+.anim-anchor:hover {
+  animation: idk 0.7s ease-in-out;
+}
+@keyframes idk {
+  30% {
+    transform: rotate(13deg);
+  }
+  60% {
+    transform: rotate(-13deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
